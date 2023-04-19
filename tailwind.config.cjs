@@ -11,7 +11,7 @@ module.exports = {
 		  secondary: {
 			light: '#688900',
 			DEFAULT: '#CFD700',
-		  },
+		  }
 		}
 	},
 	plugins: [],
