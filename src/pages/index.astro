@@ -7,23 +7,19 @@ import Menu from '../components/Menu.astro';
 <Layout title="Tile Uy - Estudio de Arquitectura ">
 	<main>
 		<Menu/>
-		<div
-			class="relative overflow-hidden bg-cover bg-no-repeat"
-			style="
-				background-position: 50%;
-				background-image: url(/img/bg/1.jpg);
-				height: 350px;
-			"
-		></div>
+		<div class="flex items-stretch ...">
+			<div class="grow" style="background-image: url(/img/bg/1.jpg);"></div>
+			<div class="grow" style="background-image: url(/img/bg/2.jpg);"></div>
+			<div class="grow" style="background-image: url(/img/bg/3.jpg);"></div>
+			<div class="grow" style="background-image: url(/img/bg/4.jpg);"></div>
+		  </div>
 	</main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-	}
-	main.narrow {
-		padding: 1.5rem;
-		max-width: 60vw;
+	div.grow {
+		background-position: 50%;
+		height: 80vh;
+		border: .1px solid #ddd
 	}
 </style>
