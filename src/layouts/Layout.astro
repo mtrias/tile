@@ -19,6 +19,7 @@ const { title } = Astro.props;
 		<link rel="stylesheet" href="./css/helper.css">
 
 		<meta name="generator" content={Astro.generator} />
+
 		<title>{title}</title>
 		<meta name="theme-color" content="#BB89EC">
 	</head>
@@ -26,3 +27,21 @@ const { title } = Astro.props;
 		<slot />
 	</body>
 </html>
+
+<style is:global>
+
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+
+</style>

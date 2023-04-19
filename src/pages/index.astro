@@ -1,15 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import AstroCards from '../components/AstroCards.astro';
+import Menu from '../components/Menu.astro';
 ---
 
 <Layout title="Tile Uy - Estudio de Arquitectura ">
 	<main>
-		<h1>Estudio de Arquitectura <span class="text-gradient">Tile Uy</span></h1>
-		<AstroCards />
-		<h1 class="text-3xl font-bold text-primary">
-			Hello TailWindCSS!
-		</h1>
+		<Menu/>
+		<div
+			class="relative overflow-hidden bg-cover bg-no-repeat"
+			style="
+				background-position: 50%;
+				background-image: url(/img/bg/1.jpg);
+				height: 350px;
+			"
+		></div>
 	</main>
 </Layout>
 
@@ -20,11 +25,5 @@ import AstroCards from '../components/AstroCards.astro';
 	main.narrow {
 		padding: 1.5rem;
 		max-width: 60vw;
-	}
-
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
 	}
 </style>
