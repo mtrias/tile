@@ -3,9 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Estudio de Arquitectura Tile Uy">
+<Layout title="Tile Uy - Estudio de Arquitectura ">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Tile Uy</span></h1>
+		<h1>Estudio de Arquitectura <span class="text-gradient">Tile Uy</span></h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -32,6 +32,9 @@ import Card from '../components/Card.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+		<h1 class="text-3xl font-bold text-primary">
+			Hello TailWindCSS!
+		</h1>
 	</main>
 </Layout>
 
@@ -39,7 +42,7 @@ import Card from '../components/Card.astro';
 	main {
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 60ch;
+		max-width: 60vw;
 	}
 	h1 {
 		font-size: 3rem;

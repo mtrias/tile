@@ -1,0 +1,18 @@
+:root {
+    --color1: 104, 137, 0;   /* #688900  */
+    --color2: 207, 215, 0;   /* #CFD700; */
+    --color3: 231, 226, 248; /* #E7E2F8; */
+    --color4: 187, 137, 236; /* #BB89EC; */
+    --color5: 105, 15, 173;  /* #690FAD; */
+
+    --accent: 124, 58, 237;
+    --accent-gradient: linear-gradient(45deg, rgb(var(--color5)), rgba(var(--color1), 50%) , white 60%);
+}
+html {
+    font-family: system-ui, sans-serif;
+    background-color: #F6F6F6;
+}
+code {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+        Bitstream Vera Sans Mono, Courier New, monospace;
+}
