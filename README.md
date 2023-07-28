@@ -57,9 +57,11 @@ https://docs.astro.build/en/guides/integrations-guide/tailwind/
 
 
 ## Github Pages
-Tambien probe Github Pages pero no funciona porque github
+Tambien probe Github Pages pero no funciona porque github usa una URL con `/` (https://mtrias.github.io/tile/) y no pude hacer andar el Github Action. Ver:
+- https://github.com/mtrias/tile/actions/runs/5695917721
+- https://github.com/mtrias/tile/commit/fdf229e142bad17eacaea95f56d578c86af60e76
+
 https://github.com/mtrias/tile/settings/pages
-https://mtrias.github.io/tile/
 https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages
 https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
