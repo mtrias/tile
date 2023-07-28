@@ -18,6 +18,11 @@ const { title } = Astro.props;
 		<link rel="stylesheet" href="./css/main.css">
 		<link rel="stylesheet" href="./css/helper.css">
 
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
 		<meta name="generator" content={Astro.generator} />
 
 		<title>{title}</title>
@@ -36,12 +41,6 @@ const { title } = Astro.props;
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
-	}
-
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
 	}
 
 </style>

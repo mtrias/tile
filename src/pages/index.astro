@@ -1,18 +1,45 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Menu from '../components/Menu.astro';
 ---
 
 <Layout title="Tile Uy - Estudio de Arquitectura ">
+
+	<header>
+		<nav
+			class="h-20 flex w-full items-center justify-between bg-white text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
+		>
+			<img src="/img/logo.svg" class="absolute left-1/2 -ml-16 mt-20 block w-32 z-[100]"/>
+		</nav>
+	</header>
+
 	<main>
-		<Menu/>
-		<div class="flex items-stretch ...">
-			<div class="grow" style="background-image: url(/img/bg/1.jpg); background-position: 100%;"></div>
-			<div class="grow" style="background-image: url(/img/bg/2.jpg); background-position: 100%;"></div>
-			<div class="grow" style="background-image: url(/img/bg/3.jpg); background-position:100%"></div>
-			<div class="grow" style="background-image: url(/img/bg/4.jpg); background-position: 50%;"></div>
-		  </div>
+		<div class="place-content-center relative shadow-xl">
+			<div class="grow background"></div>
+			<div class="tagline p-5 rounded-md h-32 w-5/6 absolute left-20 mt-20 block top-40">
+				<p class="uppercase italic">Espacios pequeños, vidas grandes &hellip;</p>
+				<p>Diseños que crean experiencias</p>
+			</div>
+		</div>
 	</main>
+
+	<footer>
+		<ul>
+			<li>
+				<a href="mailto:hola@tile.Uy">hola@tile.Uy</a>
+			</li>
+			<li>
+				<a target="_blank" href="https://www.instagram.com/tile.uy/">
+					<img src="/img/instagram.svg"/>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="https://wa.me/+59898754186">
+					<img src="/img/whatsapp.svg" />
+				</a>
+			</li>
+		</ul>
+	</footer>
+
 </Layout>
 
 <style>

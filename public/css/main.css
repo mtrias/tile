@@ -9,10 +9,64 @@
     --accent-gradient: linear-gradient(45deg, rgb(var(--color5)), rgba(var(--color1), 50%) , white 60%);
 }
 html {
-    font-family: system-ui, sans-serif;
+    font-family: 'Lato', system-ui, sans-serif;
     background-color: #F6F6F6;
+
+    /* background-color: #688900; */
 }
+
 code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-        Bitstream Vera Sans Mono, Courier New, monospace;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.tagline {
+    font-family: 'Lato';
+    color: #F6F6F6;
+    text-align: center;
+}
+.tagline p:first-child {
+    font-size: 3vw;
+}
+.tagline p {
+    font-size: 2vw;
+}
+
+
+header {
+    height: 0!important;
+}
+header img {
+    /* margin-top: 6rem!important; */
+}
+
+
+body .background {
+    filter: saturate(1.6);
+    border-color: rgb(var(--color1));
+    border-width: 5px;
+    border-style: solid none;
+
+    background-position: 100%;
+    background: url(/img/bg/sierras.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+footer {
+    text-align: right;
+}
+footer li {
+    display: inline-block;
+    display: inline-block;
+    /* height: 2em; */
+    /* line-height: 2em; */
+    margin: 0 .2em;
+    padding: 2px;
+    /* display: flex; */
+    /* align-items: flex-start; */
+    /* flex-wrap: nowrap; */
+    /* flex-direction: row; */
+    float: left;
 }
