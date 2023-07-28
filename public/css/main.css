@@ -8,11 +8,24 @@
     --accent: 124, 58, 237;
     --accent-gradient: linear-gradient(45deg, rgb(var(--color5)), rgba(var(--color1), 50%) , white 60%);
 }
+
 html {
     font-family: 'Lato', system-ui, sans-serif;
-    background-color: #F6F6F6;
+    color: #F6F6F6;
 
-    /* background-color: #688900; */
+    background: url(/img/bg/sierras.jpg) no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    /* backdrop-filter: saturate(1.6);
+    background-blend-mode: saturation; */
+}
+
+body {
+    font-family: 'Lato', system-ui, sans-serif;
 }
 
 code {
@@ -20,7 +33,6 @@ code {
 }
 
 .tagline {
-    font-family: 'Lato';
     color: #F6F6F6;
     text-align: center;
 }
@@ -31,42 +43,21 @@ code {
     font-size: 2vw;
 }
 
-
 header {
-    height: 0!important;
-}
-header img {
-    /* margin-top: 6rem!important; */
-}
-
-
-body .background {
-    filter: saturate(1.6);
-    border-color: rgb(var(--color1));
-    border-width: 5px;
-    border-style: solid none;
-
-    background-position: 100%;
-    background: url(/img/bg/sierras.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    border-bottom: 1px solid white;
+    backdrop-filter: brightness(75%);
 }
 
 footer {
-    text-align: right;
+    backdrop-filter: blur(4px);
+    backdrop-filter: brightness(60%);
+    width: 100%;
+}
+
+footer ul {
+    margin-right: 1em;
 }
 footer li {
-    display: inline-block;
-    display: inline-block;
-    /* height: 2em; */
-    /* line-height: 2em; */
-    margin: 0 .2em;
-    padding: 2px;
-    /* display: flex; */
-    /* align-items: flex-start; */
-    /* flex-wrap: nowrap; */
-    /* flex-direction: row; */
-    float: left;
+    padding: 1em .4em;
+    float: right;
 }
