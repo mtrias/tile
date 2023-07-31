@@ -7,10 +7,13 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Creamos hogares sustentables, promoviendo un estilo de vida consciente y en armonía con la naturaleza, sin comprometer nuestra comodidad y bienestar. Ponemos la calidad de vida en el centro de todos nuestros proyectos.">
+		<meta name="keywords" content="sustentabilidad, construcción, arquitectura, estudio de arquitectura, construcción sustentable, construcción saludable, tiny house, tiny houses, casas mínimas, declaración jurada de caracterización urbana, DJCU, habilitación comercial, habilitación de bomberos, regularización de viviendas, arquitectos, casas pequeñas, diseño de casas sustentables, materiales sustentables, construcción en madera, cabañas, casas transportables, trámites de arquitectura">
+
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
 		<link rel="stylesheet" href="./css/normalize.css">
@@ -27,6 +30,11 @@ const { title } = Astro.props;
 
 		<title>{title}</title>
 		<meta name="theme-color" content="#BB89EC">
+
+		<!-- Google Analytics tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MPQPE03V1M"></script>
+		<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-MPQPE03V1M'); </script>
+
 	</head>
 	<body>
 		<slot />
