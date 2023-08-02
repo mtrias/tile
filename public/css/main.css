@@ -38,9 +38,11 @@ code {
     text-align: center;
     left: 0;
     right: 0;
-    width: 80vw;
-    margin: 0 auto;
     top: 200px;
+    width: 90vw;
+    margin: 0 auto;
+
+    text-shadow: 0.5px 0.5px 0.5px rgba(100,100,100,30%);
 }
 .tagline p:first-child {
     font-size: 3vw;
@@ -49,7 +51,7 @@ code {
     font-size: 2vw;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .tagline p:first-child {
         font-size: 4vw;
     }
