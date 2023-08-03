@@ -9,6 +9,11 @@
     --accent-gradient: linear-gradient(45deg, rgb(var(--color5)), rgba(var(--color1), 50%) , white 60%);
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 html {
     font-family: 'Lato', system-ui, sans-serif;
     color: #F6F6F6;
@@ -23,10 +28,17 @@ html {
 
     /* backdrop-filter: saturate(1.6);
     background-blend-mode: saturation; */
+
+    min-height: 500px;
 }
 
 body {
     font-family: 'Lato', system-ui, sans-serif;
+}
+
+main {
+    margin-top: -5rem;
+    height: 100%;
 }
 
 code {
@@ -38,9 +50,9 @@ code {
     text-align: center;
     left: 0;
     right: 0;
-    top: 200px;
+    top: 50vh;
     width: 96%;
-    margin: 0 auto;
+    margin: 0 auto 1vw;
 
     text-shadow: 0.5px 0.5px 0.5px rgba(100,100,100,30%);
 }
