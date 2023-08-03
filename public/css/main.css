@@ -28,8 +28,6 @@ html {
 
     /* backdrop-filter: saturate(1.6);
     background-blend-mode: saturation; */
-
-    min-height: 500px;
 }
 
 body {
@@ -37,7 +35,6 @@ body {
 }
 
 main {
-    margin-top: -5rem;
     height: 100%;
 }
 
@@ -63,10 +60,7 @@ code {
     font-size: 2vw;
 }
 
-@media screen and (max-width: 750px) {
-    .tagline {
-        top: 240px;
-    }
+@media screen and (max-width: 500px) {
     .tagline p:first-child {
         font-size: 4.6vw;
     }
@@ -76,6 +70,12 @@ code {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav {
     border-bottom: 0.5px solid white;
     backdrop-filter: blur(.9px) brightness(75%);
 }
